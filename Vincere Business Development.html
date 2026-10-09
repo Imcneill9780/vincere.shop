@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vincere Business Development | Helping your business win</title>
+<meta name="description" content="Strategic business development, sales, and partnerships for local businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F2EC; --surface:#E4E7DD; --ink:#16241C; --muted:#4A5A50; --green:#1F3D2B; --brass:#9A7420; --on-green:#F1F2EC; --line:#C5CABD;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101A14;--surface:#18271E;--ink:#E9EBE2;--muted:#A3B0A6;--green:#0B120E;--brass:#D2AC55;--on-green:#E9EBE2;--line:#2B3D31}}
+:root[data-theme="dark"]{--bg:#101A14;--surface:#18271E;--ink:#E9EBE2;--muted:#A3B0A6;--green:#0B120E;--brass:#D2AC55;--on-green:#E9EBE2;--line:#2B3D31}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 'Figtree',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;text-decoration:none;font-size:1.15rem}
+.nav a.link{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
+.nav a.link:hover{color:var(--ink)}
+@media(max-width:560px){.nav a.link.opt{display:none}}
+
+.hero{padding:4rem 0 5rem}
+.def{color:var(--muted);font-size:1rem;margin:0 0 .5rem}
+.def b{color:var(--brass);font-weight:600}
+.hero h1{font-size:clamp(4rem,17vw,11rem);font-weight:800;letter-spacing:-.045em;line-height:.9;animation:rise .9s ease-out both}
+.hero .tag{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.5rem,4vw,2.4rem);font-weight:600;margin:1.5rem 0 1rem}
+.hero p.lead{max-width:34rem;color:var(--muted);margin:0 0 2rem}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}html{scroll-behavior:auto}}
+.btn{display:inline-block;background:var(--green);color:var(--on-green);padding:.9rem 1.6rem;border-radius:6px;text-decoration:none;font-weight:600;border:2px solid var(--green)}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line);margin-left:.5rem}
+.btn.alt:hover{border-color:var(--ink)}
+
+section.band{padding:4.5rem 0;border-top:1px solid var(--line)}
+section.band h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:1rem}
+.intro{max-width:36rem;color:var(--muted);margin:0 0 2.5rem}
+
+.mission{background:var(--green);color:var(--on-green);border:0}
+.mission p{font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.4rem,3.4vw,2.2rem);line-height:1.3;max-width:48rem;margin:0;font-weight:600}
+.mission .small{font-family:'Figtree',sans-serif;font-size:1rem;font-weight:400;margin-bottom:1.25rem;color:var(--brass)}
+
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:1.4rem 0;display:flex;justify-content:space-between;gap:1rem;align-items:baseline;font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(1.25rem,3vw,1.7rem);font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--brass);font-size:1.8rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+.body{padding:0 0 1.75rem;max-width:44rem}
+.body p.what{color:var(--muted);margin:0 0 1rem}
+.body ul{margin:0 0 1rem;padding-left:1.2rem}
+.body li{margin:.3rem 0}
+.goal{border-left:3px solid var(--brass);padding-left:1rem;font-weight:600}
+
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem;align-items:start}
+.chips p{color:var(--muted);margin:.5rem 0 0}
+.qs{background:var(--surface);padding:2rem;border-radius:10px}
+.qs h3{font-size:1.4rem;margin-bottom:1rem}
+.qs ol{margin:0;padding-left:1.2rem}
+.qs li{margin:.7rem 0}
+
+.cta{text-align:left}
+.cta h2{max-width:30rem}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <a class="logo" href="#top">Vincere</a>
+    <nav><a class="link opt" href="#services">Services</a><a class="link opt" href="#approach">Approach</a><a class="link" href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="def"><b>vincere</b> (Latin, verb): to win, to conquer.</p>
+      <h1>Vincere</h1>
+      <p class="tag">Helping your business win.</p>
+      <p class="lead">Business development, sales, and partnerships for local businesses that are ready to grow.</p>
+      <a class="btn" href="#contact">Start a conversation</a><a class="btn alt" href="#services">See what we offer</a>
+    </section>
+  </main>
+</div>
+
+<section class="band mission" aria-label="Our mission">
+  <div class="wrap">
+    <p class="small">Our mission</p>
+    <p>We help businesses identify opportunities, build meaningful relationships, and achieve sustainable growth through strategic business development, sales, and partnerships.</p>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <h2>What we offer</h2>
+    <p class="intro">Five growth solutions, from collecting more reviews to planning your next market. Open any one for details.</p>
+
+    <details open>
+      <summary>Customer acquisition and Google review solutions</summary>
+      <div class="body">
+        <p class="what">We help businesses collect customer feedback and make it easy for satisfied customers to leave Google reviews.</p>
+        <ul>
+          <li>Install and set up Google review NFC chips and QR-code solutions.</li>
+          <li>Create a convenient review-request process.</li>
+          <li>Show employees how to invite customers to leave honest feedback.</li>
+          <li>Find ways to improve the customer experience and encourage repeat business.</li>
+        </ul>
+        <p class="goal">Our goal: make customer feedback a natural part of your customer experience.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Market research and business intelligence</summary>
+      <div class="body">
+        <p class="what">We research local markets so you understand your competition, your customers, and where you can grow.</p>
+        <ul>
+          <li>Research competitors, services, pricing, and positioning.</li>
+          <li>Identify potential customers and underserved markets.</li>
+          <li>Build targeted lists of potential clients and business partners.</li>
+          <li>Research nearby communities for geographic expansion.</li>
+          <li>Present findings in clear, actionable reports.</li>
+        </ul>
+        <p class="goal">Our goal: give you useful information to make informed growth decisions.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Sales development and lead generation</summary>
+      <div class="body">
+        <p class="what">We help you build a pipeline of potential customers and a consistent process for reaching them.</p>
+        <ul>
+          <li>Identify and qualify potential customers.</li>
+          <li>Build organized prospect databases.</li>
+          <li>Conduct personalized business-to-business outreach.</li>
+          <li>Help schedule introductory meetings and sales conversations.</li>
+          <li>Track outreach, responses, and opportunities.</li>
+        </ul>
+        <p class="goal">Our goal: create more opportunities for meaningful sales conversations.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Strategic partnerships and networking</summary>
+      <div class="body">
+        <p class="what">We help you find the organizations and professionals you could benefit from working with.</p>
+        <ul>
+          <li>Identify potential referral partners.</li>
+          <li>Research complementary businesses and suppliers.</li>
+          <li>Facilitate introductions and partnership conversations.</li>
+          <li>Identify local networking and community opportunities.</li>
+          <li>Develop mutually beneficial business relationships.</li>
+        </ul>
+        <p class="goal">Our goal: turn regional connections into opportunities for growth.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Business growth and expansion</summary>
+      <div class="body">
+        <p class="what">We help you evaluate opportunities and build practical plans to pursue them.</p>
+        <ul>
+          <li>Assess opportunities for entering new markets.</li>
+          <li>Identify additional services or customer segments to explore.</li>
+          <li>Research local demand and competition.</li>
+          <li>Develop actionable growth plans.</li>
+          <li>Support implementation through outreach, research, and follow-up.</li>
+        </ul>
+        <p class="goal">Our goal: move from ideas to measurable business development activity.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="band" id="approach">
+  <div class="wrap chips">
+    <div>
+      <h2>We start by listening</h2>
+      <p>Every engagement begins with your business: how customers find you today, where you want to grow, and who you most want to serve. Our Google review chips give us a simple way to meet local business owners and learn their market firsthand.</p>
+    </div>
+    <div class="qs">
+      <h3>Four questions we ask</h3>
+      <ol>
+        <li>How does your business currently get traffic?</li>
+        <li>Have you recognized any areas where the business could grow?</li>
+        <li>Who is your desired customer, and why?</li>
+        <li>Would you benefit from what Vincere offers?</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="band cta" id="contact">
+  <div class="wrap">
+    <h2>Ready to win more business?</h2>
+    <p class="intro">Tell us about your business and where you want it to go. We will take it from there.</p>
+    <a class="btn" href="mailto:hello@example.com?subject=Vincere%20Business%20Development%20inquiry">Email Vincere</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Vincere Business Development</span>
+    <span>Helping your business win.</span>
+  </div>
+</footer>
+</body>
+</html>
